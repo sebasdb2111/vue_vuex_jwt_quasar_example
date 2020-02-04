@@ -85,5 +85,13 @@ export const auth = {
         registerFailure(state) {
             state.status.loggedIn = false;
         }
+    },
+    getters: {
+        user : state => {
+            return state.user
+        },
+        status : state => {
+            return state.status
+        }
     }
 };
